@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Cinzel:wght@400;700;900&family=Faculty+Glyphic&family=Itim&family=Parkinsans:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;500;700&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Parkinsans', sans-serif;
+}
+
+/* Body and Main */
+body {
+    background-color: #171717; /* Dark theme background */
+    color: #ededed; /* Light text */
+    line-height: 1.6;
+    padding: 20px;
+    transition: all 0.3s ease-in-out; /* Smooth theme transition */
+}
+
+main {
+    max-width:100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Page Section */
+.page1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+/* About Section */
+.aboutsec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 20px; */
+    /* text-align: left; */
+
+}
+
+.aboutsec h1 {
+    font-size: 3vw;
+    color: #DA0037; /* Accent color */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px black, -2px -2px 3px gray; /* Multiple shadows */
+
+}
+
+.aboutsec h2 {
+    font-size: 1.3vw;
+    color: #dedede;
+    line-height:1.6vw;
+    text-shadow: 2px 2px 4px black, -2px -2px 3px gray; /* Multiple shadows */
+
+}
+
+.im img{
+    width: 22vw;
+    height:22vw;
+    object-fit:cover ;
+    object-position: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px whitesmoke;
+    animation: zoomIn 1s ease-in-out; /* Zoom-in animation */
+
+}
+
+/* Mission Section */
+.subabout {
+    background-color: #1e1e1e; /* Slightly lighter dark background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+    animation: slideUp 1s ease-in-out; /* Slide-up animation */
+    border-left: 4px solid #DA0037;
+}
+
+.subabout h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ededed;
+    text-shadow: 2px 2px 4px black, -2px -2px 3px gray; /* Multiple shadows */
+
+}
+
+.subabout h3 {
+    font-size: 1.3vw;
+    line-height:1.6vw;
+    color: #dedede;
+}
+
+/* About Bottom Section */
+.aboutbottom {
+    text-align: left;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-left: 4px solid #DA0037;
+    border-radius: 8px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.aboutbottom h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ededed;
+    line-height: 1.9vw;
+    text-shadow: 2px 2px 4px black, -2px -2px 3px gray; /* Multiple shadows */
+
+}
+
+.aboutbottom h4 {
+    font-size: 1rem;
+    color: #ededed;
+    line-height: 1.3vw;
+}
+.aboutfooter{
+    text-align: left;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-left: 4px solid #DA0037;
+    border-radius: 8px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 1.5s ease-in-out;
+
+}
+.aboutfooter h1{
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ededed;
+    text-shadow: 2px 2px 4px black, -2px -2px 3px gray; /* Multiple shadows */
+    
+}
+.aboutfooter h4{
+    font-size: 1rem;
+    color: #ededed;
+    line-height: 1.3vw;
+
+}
+h5{
+    margin-top: 2vw;
+    text-align: center;
+    font-size: 1.3vw;
+    color: #DA0037;
+    text-shadow: 2px 2px 4px black, -2px -2px 3px gray; /* Multiple shadows */
+
+}
+
+/* Button and Links */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ededed;
+    color: #171717;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    font-weight: bold;
+    outline: none;
+}
+
+a:hover {
+    background-color: #DA0037;
+    transform: scale(1.05);
+    color: #ededed;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .aboutsec {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutsec .im img {
+        margin-top: 15px;
+    }
+}
+/* Responsive Design for Mobile Devices and iPhones */
+@media (max-width: 768px) {
+    body {
+        padding: 1.5rem;
+    }
+
+    .aboutsec {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .aboutsec h1 {
+        font-size: 5vw;
+    }
+
+    .aboutsec h2 {
+        font-size: 3.5vw;
+        line-height: 5vw;
+    }
+
+    .im img {
+        width: 50vw;
+        height: 50vw;
+        margin-top: 2rem;
+    }
+
+    .subabout {
+        padding: 2rem;
+    }
+
+    .subabout h1 {
+        font-size: 4vw;
+    }
+
+    .subabout h3 {
+        font-size: 3.5vw;
+        line-height: 5vw;
+    }
+
+    .aboutbottom {
+        padding: 2rem;
+    }
+
+    .aboutbottom h1 {
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+
+    .aboutbottom h4 {
+        font-size: 3vw;
+        line-height: 4.5vw;
+    }
+
+    .aboutfooter {
+        padding: 2rem;
+    }
+
+    .aboutfooter h1 {
+        font-size: 4vw;
+    }
+
+    .aboutfooter h4 {
+        font-size: 3vw;
+        line-height: 4.5vw;
+    }
+
+    h5 {
+        margin-top: 4vw;
+        font-size: 3vw;
+    }
+
+    a {
+        padding: 1rem 2rem;
+        font-size: 3vw;
+    }
+}
+
+/* iPhone-Specific Adjustments */
+@media (max-width: 375px) {
+    .aboutsec h1 {
+        font-size: 6vw;
+    }
+
+    .aboutsec h2 {
+        font-size: 4vw;
+        line-height: 6vw;
+    }
+
+    .im img {
+        width: 60vw;
+        height: 60vw;
+    }
+
+    .subabout h1, .aboutbottom h1, .aboutfooter h1 {
+        font-size: 5vw;
+    }
+
+    .subabout h3, .aboutbottom h4, .aboutfooter h4 {
+        font-size: 4vw;
+        line-height: 5.5vw;
+    }
+
+    a {
+        padding: 1rem 1.5rem;
+        font-size: 4vw;
+    }
+
+    h5 {
+        font-size: 4vw;
+    }
+}
